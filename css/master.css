@@ -1,0 +1,76 @@
+html, h1 {
+    background-color: rgb(245, 245, 245);
+    font-family: 'Special Elite', cursive;
+
+}
+body, h2 {
+    background-color: rgb(245, 245, 245);
+    font-family: 'Antic Slab', serif;
+}
+#chord h2{
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+#mode h2, p{
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+
+#Title {  
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 15px;
+}
+#tab button{
+    display: block;
+    margin: 0 auto;
+}
+.w3-third label{
+    font-weight: 300;
+    font-size: 12px;
+}
+.w3-third p{
+    font-weight: 100;
+    font-size: 12px;
+}
+#mainbutt {
+    border: none; 
+    background-color: #DCDCDC; 
+    padding: 15px; 
+    display: block; 
+    margin: 0 auto;
+}
+.w3-third .subtitle {
+    color: rgb(100, 100, 90);
+    font-size: 20px;
+}
+#extensions .labels{
+    text-decoration: underline; 
+    font-weight: 100;
+}
+.tabcontent {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+.tablinks {
+    color: rgb(70, 80, 79);
+    font-weight: 100;
+    letter-spacing: 1.5px;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+
