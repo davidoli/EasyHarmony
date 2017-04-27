@@ -183,12 +183,14 @@ function calculateMode() {
 	}
 	else if(chordRoot == "A" || chordRoot == "B" || chordRoot == "C#" || chordRoot == "D" ||
 	 chordRoot == "E" || chordRoot == "F#" || chordRoot == "G"){
+		result+=sharpnotes[start];
 		for(var key in scale) {
     		var value = scale[key];
     		result+= " " + sharpnotes[value];
 		}
 	 }
 	else{
+		result+=flatnotes[start];
 		for(var key in scale) {
     		var value = scale[key];
     		result+= " " + flatnotes[value];
