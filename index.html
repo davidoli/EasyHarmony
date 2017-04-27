@@ -21,41 +21,49 @@
 	<div class="w3-bar w3-grey border" id="tabs">
 	  <button class="w3-bar-item w3-button tablinks" onclick="openPage('chord')">Chord Builder</button>
 	  <button class="w3-bar-item w3-button tablinks" onclick="openPage('mode')">Modes</button>
-	  <button class="w3-bar-item w3-button tablinks" onclick="openPage('clickme')">Click Me</button>
+	  <button class="w3-bar-item w3-button tablinks" onclick="openPage('negative')">Negative Harmony</button>
 	</div>
-<!--///////////////////////////////////////////////////////////////////////////////////////////Contents-->
+<!--   ////////////////////////////////////Contents///////////////////////////////////////////////-->
 	<div id="chord" class="w3-container page tabcontent">
-	  <h2>input chord.</h2> <br>
-		<div class="w3-row-padding">
-		  <div class="w3-third">
-		    <label class="subtitle">Chord Root</label>
-		    <input class="w3-input w3-border" id="chordRoot" type="text" placeholder="e.g. A, Bb" style="width: 30%" required>
-		  </div>
-		  <div class="w3-third">
-		    <label class="subtitle">What follows the root?</label> <br>
-		    <input class= "w3-input w3-border" id="chordType" type="text" placeholder="e.g. min, 7, maj7, sus4" style="width: 45%" required>
-		  </div>
-		  <div class="w3-third" id="extensions">
-			<label class="subtitle">Extensions</label> <br>
-			<label class="labels">add 9</label>
-			<input class="w3-input w3-border" id="add9" type="text" placeholder="N/A, 9, b9, #9" style="width: 30%">
-			<label class="labels">add 11</label>
-			<input class="w3-input w3-border" id="add11" type="text" placeholder="N/A, 11, #11" style="width: 30%">
-			<label class="labels">add 13</label>
-			<input class="w3-input w3-border" id="add13" type="text" placeholder="N/A, 13, b13" style="width:  30%">
-		  </div>
+	  <h2>input chord.</h2> <br><br>
+		<div class="w3-row-padding">  
+		  <p class="subtitle">Chord Root</p>
+		  <input class="w3-input w3-border" id="chordRoot" type="text" placeholder="e.g. A, Bb" required><br>
+		  <p class="subtitle">What follows the root?</p>
+		  <input class= "w3-input w3-border" id="chordType" type="text" placeholder="e.g. min, 7, maj7, sus4"  required><br>
+		</div>
+		<div id="extensions">
+			<p class="subtitle">Extensions</p> 
+			<input class="w3-input w3-border" id="add9" type="text" placeholder="N/A, 9, #11, b13"><br>
+		</div>
 
 		  <input class="w3-button w3-ripple" id="mainbutt" type=button onclick="calculateNotes()" value="Break down that Chord!"></button><br>
-		  <input class="w3-input w3-border" type="text" id="result" style="border-style: ridge; width: 18%; margin:0 auto" align=center placeholder="The notes in the chord are..." readonly>
+		  <input class="w3-input w3-border" type="text" id="result" align=center placeholder="Your chord is..." readonly><br><br><br>
 		</div>
 	</div>
 	<div id="mode" class="w3-container page tabcontent" style="display:none">
-	  <h2>Input root and mode.</h2><br><br>
-	  <p>Input root here:</p>
+	  <h2>Modes.</h2><br><br>
+	  <p class="subtitle">Input root here:</p>
+	  <input class="w3-input w3-border" id="modeRoot" type="text" placeholder="e.g. A, Bb" required><br>
+	  <p class="subtitle">Select a mode:</p>
+	  <div id="modeSelect">
+		  <select id="modes">
+	  		<option value="ionian">Ionian</option>
+			<option value="dorian">Dorian</option>
+			<option value="phrygian">Phrygian</option>
+			<option value="lydian">Lydian</option>
+			<option value="mixolydian">Mixolydian</option>
+			<option value="aeolian">Aeolian</option>
+			<option value="locrian">Locrian</option>
+		  </select>
+	  </div><br>
+	  <input class="w3-button w3-ripple" id="mainbutt" type=button onclick="calculateMode()" value="Your Scale is... "></button><br>
+	  <input class="w3-input w3-border" type="text" align=center id="modeResult" placeholder="Your notes are..." readonly>
+	  <br>
 	</div>
-	<div id="clickme" class="w3-container page tabcontent" style="display:none">
-	  <h2>I Love You</h2>
-	  <p>Gimme a hug.</p>
+	<div id="negative" class="w3-container page tabcontent" style="display:none">
+	  <h2>Negative Harmony</h2>
+	  <p>Input a Chord here:</p>
 	</div>
 
 	<script src = "js/mainScript.js"></script>
