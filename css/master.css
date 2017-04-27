@@ -17,38 +17,43 @@ body, h2 {
     font-weight: 100;
     letter-spacing: 2px;
 }
-
-
+#negative h2, p{
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
 #Title {  
     font-weight: 100;
     letter-spacing: 2px;
     text-align: center;
     padding: 15px;
 }
-#tab button{
+#tabs {
+    text-align: center;
     display: block;
     margin: 0 auto;
 }
-.w3-third label{
+/*.w3-third label{
     font-weight: 300;
     font-size: 12px;
 }
 .w3-third p{
     font-weight: 100;
     font-size: 12px;
-}
+}*/
 #mainbutt {
-    border: none; 
+    border: none;
+    border-radius: 10px; 
     background-color: #DCDCDC; 
     padding: 15px; 
     display: block; 
     margin: 0 auto;
+
 }
-.w3-third .subtitle {
+.subtitle {
     color: rgb(100, 100, 90);
-    font-size: 20px;
 }
-#extensions .labels{
+.labels{
     text-decoration: underline; 
     font-weight: 100;
 }
@@ -56,12 +61,22 @@ body, h2 {
     -webkit-animation: fadeEffect 1s;
     animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
+#chordRoot, #chordType, #add9, #result, #modeRoot, #modeResult {
+    border-style: ridge;
+    width: 13%;
+    margin:0 auto;
+    border-radius: 10px;
+}
 .tablinks {
     color: rgb(70, 80, 79);
     font-weight: 100;
     letter-spacing: 1.5px;
 }
-
+#modeSelect {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
 @-webkit-keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
