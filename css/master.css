@@ -41,14 +41,15 @@ body, h2 {
     font-weight: 100;
     font-size: 12px;
 }*/
-#mainbutt {
+#chordbutt, #modebutt, #chordbutt2 {
     border: none;
     border-radius: 10px; 
     background-color: #DCDCDC; 
     padding: 15px; 
     display: block; 
     margin: 0 auto;
-
+    color: rgb(100, 100, 90);
+    font-weight: 700;
 }
 .subtitle {
     color: rgb(100, 100, 90);
@@ -61,7 +62,7 @@ body, h2 {
     -webkit-animation: fadeEffect 1s;
     animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
-#chordRoot, #chordType, #add9, #result, #modeRoot, #modeResult {
+#chordRoot, #chordRoot2, #chordType, #chordType2, #add9, #add92, #result, #modeRoot, #modeResult, #negativeResult1, #negativeResult2 {
     border-style: ridge;
     width: 13%;
     margin:0 auto;
@@ -72,7 +73,7 @@ body, h2 {
     font-weight: 100;
     letter-spacing: 1.5px;
 }
-#modeSelect {
+#modeSelect, #keySelect {
     display: block;
     text-align: center;
     margin: 0 auto;
